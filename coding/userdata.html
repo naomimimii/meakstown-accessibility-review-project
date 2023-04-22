@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head lang="en">
+
+    
+        <link rel="stylesheet" type="text/css" href= "css/layout.css">
+
+        <meta charset="UTF-8">
+    
+        <title>Form results - Submitted shit data</title>
+
+    
+    </head>
+    
+    <body>
+    
+        <div class="results">
+        <h1>Your info is mine forever now!</h1>
+            
+            <img src ="images/heheheeheheh.png" alt="me laughing because ur info is mine now but im too lazy to do anything with it">
+            
+            <p>I'm not gonna do anything with it because that takes effort. Bye!!!!!</p>
+            
+            <h3>Your submitted data:</h3>
+            
+            <div id="userdata"></div>
+            
+            <p> <a href="index.html">Return back home!</a></p>
+            
+        </div>
+                
+        <script>
+       
+            const dataList = document.getElementById("userdata")
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                dataList.append(`${name}: ${value}`)
+                dataList.append(document.createElement('br'))
+            }) 
+   
+        </script> 
+        
+        <br>
+            
+        <br>
+        <footer>Footer thing because apparently it's compulsory >_></footer>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
